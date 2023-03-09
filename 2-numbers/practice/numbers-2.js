@@ -24,8 +24,8 @@ console.log(roundedUp)
 
 
 // find the absoloute value of -13
-let absoloute = Math.abs(-13)
-console.log(absoloute)
+let absolute = Math.abs(-13)
+console.log(absolute)
 
 
 
