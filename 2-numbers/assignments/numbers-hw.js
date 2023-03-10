@@ -34,7 +34,7 @@ let even2 =24
 let odd1 = 21
 let odd2 =13
 
-console.log(odd1 / odd2)
+console.log(odd1 % odd2)
 
 // find the minimum value in a set of numbers: 10,20,30,40,50 
 let min = Math.min(10,20,30,40,50)
