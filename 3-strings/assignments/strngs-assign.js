@@ -2,7 +2,10 @@
 // 1. Concatenate "hello" with "goodbye"
 const string1 = "hello"
 const string2  = "goodbye"
-console.log(''.concat(string1, string2))
+console.log(''.concat(string1," ", string2))
+console.log(string1.concat(" ", string2))
+string1.concat(string1 + string2)
+
 
 // 2. Save the substring "Friend" from the string "Hello Friend"
 const greeting = "Hello Friend"
@@ -45,7 +48,7 @@ console.log(myInitials)
 
 // 5. Get the 5th character from the following string: 'Hello World'
 const greeting1 = 'Hello World'
-console.log(greeting1[5])
+console.log(greeting1[4])
 
 // 6. Find the index of the dash from 'Coding-Time!'
 const coding = 'Coding-Time!'

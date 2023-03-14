@@ -24,5 +24,5 @@ const inputPass = password
 // If they are the same, log the credit card num and the last4SS
 // If not, log 'incorrect username or id'
 
-let text = userId == inputId && password == inputPass ? console.log(creditCardNum,last4SS) : "incorrect username or id";
-// console.log(text)
+let text = userId === inputId && password === inputPass ? creditCardNum + last4SS : "incorrect username or id";
+console.log(text)

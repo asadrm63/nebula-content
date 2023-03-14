@@ -17,12 +17,12 @@ if (name.length < 10){
 
 // Create the following if statement: 
 // If this month (1-12) is after March and before December, log 'Winter is Coming!'
-let month = 4
+// let month = 3
+let month = Math.ceil(Math.random()*12)
+console.log(month)
 if (month >3 && month < 12){
     console.log("Winter is Coming!")
 }
-
-
 
 // Create two variables a & b initialized as numbers
 // Write the following if statement

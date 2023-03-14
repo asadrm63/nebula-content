@@ -15,13 +15,13 @@ let position = Math.ceil(Math.random()*5);
 console.log(position)
 
 switch(position){  
-    case '1':
+    case 1 :
     console.log(`${horseName} finished in first place!`);
     break;
-    case '2':
+    case 2:
       console.log(`${horseName} finished in second place!`);
       break;
-      case '3':
+      case 3:
     console.log(`${horseName} finished in third place!`);
     break;
     default: 
