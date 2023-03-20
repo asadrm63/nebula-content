@@ -59,16 +59,19 @@ console.log(lastNames)
 // 7.   Loop over the celebrity list and then loop through each name. 
 //      If a letter is a vowel, log it to the console
 
-const vowels = "aiou"
- let vowelCount = []
+const vowels = "aeiou"
 for (let i = 0; i < topFiveCelebs.length; i++){
     for (let j = 0; j <topFiveCelebs[i].length; j++){
-    if (topFiveCelebs[i][j] === 'a'|| topFiveCelebs[i][j] === 'i' || topFiveCelebs[i][j] === 'o' ||topFiveCelebs[i][j] === 'u'){
-         console.log(`${topFiveCelebs[i][j]}`);  
+    // if (topFiveCelebs[i][j] === 'a'|| topFiveCelebs[i][j] === 'i' || topFiveCelebs[i][j] === 'o' ||topFiveCelebs[i][j] === 'u' || topFiveCelebs[i][j] === 'e'){
+    //      console.log(`${topFiveCelebs[i][j]}`);  
+
+    if (vowels.includes(topFiveCelebs[i][j])){
+        console.log(`${topFiveCelebs[i][j]}`);
+    }
     } 
     }
    
-}
+// }
 
 
 
@@ -121,16 +124,16 @@ for (let i = 0; i<topFiveCelebs.length; i++){
 
 
 for (let i = 0 ; i<=30; i++){
-    if (i %2 === 0 &&  i %3 !== 0 ) {
-      console.log("fizz", i)
+
+    if (i %3 === 0 &&  i %2 === 0 ) {
+        console.log("fizz-buzz", i)
     }
-  
-    else  if (i %3 === 0 &&  i %2 !== 0 ) {
+    else  if (i %3 === 0) {
       console.log("buzz", i)
     }
-   else  if (i %3 === 0 &&  i %2 === 0 ) {
-      console.log("fizz-buzz", i)
+   else  if (i %2 === 0) {
+    console.log("fizz", i)
    }
-  
+   
     else {console.log(i)}
   }
