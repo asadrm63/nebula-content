@@ -42,7 +42,7 @@ const car =(desiredLocation) => {
 
     // 7. What does the return statement do?
 
-    //  Return is a keyword that wil produce an output of a function
+    //  Return is a keyword that wil produce an output of a function, it ends function executiom and specifies the value to be returned from the function
 
     inconvenience
     

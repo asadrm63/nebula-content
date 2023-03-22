@@ -13,10 +13,12 @@ console.log(addedOne([2,3,5]))
   // Example string = "happy birthday", letter = "q" should return false
 
   function includes(string,a) {
-    if (string.includes(a)) {
-      return true
-    }
-    else {return false}
+  //   if (string.includes(a)) {
+  //     return true
+  //   }
+  //   else {return false}
+
+    return string.includes(a);
   }
 
   console.log(includes("happy birthday","z"))
@@ -46,6 +48,10 @@ console.log(firstName(array))
 function greetingFunction (name,greeting){
   return `${greeting} ${name} ` 
 
+}
+
+const gf = (name,greeting) => {
+  return `${greeting} ${name} ` 
 }
 console.log(greetingFunction("Asad","Hello"))
   
