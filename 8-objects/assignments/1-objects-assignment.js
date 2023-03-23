@@ -60,9 +60,7 @@ dreamCar.turnOffCar = function turnOff () {
     console.log("Turning Off")
 }
 
-dreamCar.running = if (dreamCar.turnOnCar
-    )
-console.log(dreamCar)
+
 
 
 //10.   

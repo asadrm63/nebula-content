@@ -37,5 +37,5 @@ addProp(caleb,"married",false)
 // }
 
 for (let prop in caleb){
-    console.log(prop)
+    console.log(prop, caleb[prop])
 }
