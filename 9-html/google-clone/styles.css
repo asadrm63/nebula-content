@@ -1,0 +1,109 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+  }
+  
+  .header a {
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: black;
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header-right .header__apps {
+    margin-right: 10px;
+  }
+.container{
+  
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+ 
+}
+.container img {
+  object-fit: contain;
+  height: 100px;
+  justify-content: center;
+}
+   
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.container {
+  flex: 1;
+  display: flex;
+  margin-top: 8%;
+  flex-direction: column;
+  padding: 0%;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+  }
+
+  .searchbar input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+  }
+
+  .searchbuttons button{
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+  }
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+    background-color: rgba(181, 180, 180, 0.301);
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer a {
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: black;
+  }
+  
+  body,input,button {
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #202124;
+}
