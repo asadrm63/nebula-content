@@ -39,3 +39,28 @@ addProp(caleb,"married",false)
 for (let prop in caleb){
     console.log(prop, caleb[prop])
 }
+
+
+
+const dad = {
+    name :' John',
+    occupation : "engineer", 
+    age : 32,
+  happy : true,
+ weight: 150,
+}
+
+
+console.log(dad.name)
+console.log(dad.occupation)
+console.log(dad.age)
+
+dad.joke = function(){
+    console.log("What does a baby computer call his father? Data.")
+}
+
+console.log(dad.joke())
+
+addProp(dad,"stillActing",true)
+
+console.log(dad)

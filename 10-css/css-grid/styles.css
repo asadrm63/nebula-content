@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color:#edede9;
+  }
+  
+  .container {
+    width: 60%;
+    margin: 2rem auto; 
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid: column start 100px; ;
+     grid-gap: 15px;
+    }
+  
+    .photos {
+        display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+  width: 100%;
+    }
+
+    .cosmic-tree {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+
+.dead-tree{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.lake {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.mill{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.swan{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}

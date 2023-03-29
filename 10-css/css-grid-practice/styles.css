@@ -1,0 +1,49 @@
+/* 
+e76f51
+light blue a2d2ff
+2a9d8f
+cdb4db
+ccd5ae
+*/
+
+:root {
+    --lightblue:#a2d2ff;
+    --lightgreen: #ccd5ae;
+    --as: #cdb4db;
+    --da: #2a9d8f;
+    --orange: #e76f51;
+}
+
+
+body{
+    background-color: var(--as);
+}
+
+.container{
+    display: grid;
+    background-color:var(--da) ;
+    height: 600px;
+    width: 600px;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+    background-color: var(--orange);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.item-2 {
+    height: 100%;
+    width: 100%;
+    background-color: var(--lightgreen);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
