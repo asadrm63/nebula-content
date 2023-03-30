@@ -16,9 +16,6 @@ html {
   img {
     width: 200px;
     height: 200px;
-    display: grid;
-    grid: column start 100px; ;
-     grid-gap: 15px;
     }
   
     .photos {
@@ -52,9 +49,9 @@ html {
 }
 
 .mill{
-    grid-column-start: 1;
+    grid-column-start:6;
     grid-column-end: 5;
-    grid-row-start: 3;
+    grid-row-start: 7;
     grid-row-end: 6;
 }
 
