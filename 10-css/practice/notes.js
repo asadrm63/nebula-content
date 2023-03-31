@@ -81,11 +81,11 @@ function caculator(str) {
           
             
       
-        Test.assertEquals(grades('[0,32,90,38,78,96,74,65]'), 5);
-         Test.assertEquals(grades(' [65,74,82,91,59,47]'), 4);
-        Test.assertEquals(grades('[30,40,50,60,70,80,90,100,101]'), 5);
-    Test.assertEquals(grades('  [61,62,63,64,65,66,67,68,69]'), 5);
-        Test.assertEquals(grades('[44,22,33,66,77,88,99,0]'), 4);
+       console.log(grades([0,32,90,38,78,96,74,65]), 5);
+       console.log(grades( [65,74,82,91,59,47]), 4);
+       console.log(grades([30,40,50,60,70,80,90,100,101]), 5);
+       console.log(grades([61,62,63,64,65,66,67,68,69]), 5);
+       console.log(grades([44,22,33,66,77,88,99,0]), 4);
 
 
         // counter 
@@ -108,7 +108,31 @@ function caculator(str) {
 
 
 
+// Count the number of ‘J’s in a string
+//  Input str
+// Output count of letter ‘J’
+// ’Jacob Jinglehiemersmithj’ = 2
+// let str = 'Juliet, 25, true, jacob, Josh'
+// output 2
+// 'bob'
+// output 0
+// 'jadJ bbhKKKJjjJ'
+// output 3
+// 'today was a joke'
+// output 0
 
 
 
+           // counter 
 
+           let counter =0;
+            // loop
+
+            for let i = 0; i<string.length; i++;{
+              if (string[i]=== J ){
+                counter ++
+              }
+            }
+            // if 
+            // acculmulate
+            // return counter

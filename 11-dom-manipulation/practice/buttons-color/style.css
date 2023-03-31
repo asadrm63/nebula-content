@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    transition-duration: 2.2s;
+    width: 90%;
+    text-align: center;
+
+    background-color: aqua;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
