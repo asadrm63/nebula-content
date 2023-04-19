@@ -49,7 +49,7 @@ buttonIncrement.classList.add("button1")
 /* -------------------------------------------------------------------------- */
 
 // Create another button element to decrement the h1 text
-const buttonDecrement = document.createElement('button');
+const buttonDecrement = document.body.createElement('button');
 
 // Add the button element to the body element
 bodyElement.appendChild(buttonDecrement)
