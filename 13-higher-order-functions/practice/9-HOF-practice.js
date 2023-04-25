@@ -47,11 +47,16 @@ const phoneNums = [
     "347-123-4567",
     ];
 
+    // const pro = phoneNums.map(number => {
+    //     let arr2 = number.split("")
+    //      console.log(arr2)
+    //     let nw1 = arr2.slice(1,8,"#","#","-","#","#","#","-","#","#")
+    //  return nw1
+    //  } )
     const pro = phoneNums.map(number => {
-        let arr2 = number.split("")
-         console.log(arr2)
-        let nw1 = arr2.slice(1,8,"#","#","-","#","#","#","-","#","#")
-     return nw1
+       return number
+       .split("")
+       arr2.slice(1,8,"#","#","-","#","#","#","-","#","#")
      } )
      
      console.log(pro)
@@ -101,7 +106,7 @@ const people1 = [
 //filter and sort
 function selectedAges(array){
     return array
-    .filter((person) => person.age >20 && person.age <65)
+    .filter((person) => person.age >20 && person.age <35)
     .sort((a,b) => a.age - b.age)
 }
 
