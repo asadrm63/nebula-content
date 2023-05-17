@@ -1,17 +1,13 @@
-import React,{useState} from "react";
-import logo from './logo.svg';
-import './App.css';
-import About from "./components/IdCardList";
+import React, { useState } from "react";
+import IdCardList from "./components/IdCardList";
 
 function IdCreator() {
-  const [name, setName] = useState('');
-  const [age, setAge] = useState('');
-  const [Address, setAddress] = useState('');
-  const [favoriteColor, setFavoriteColor] = useState('');
-  const [showInfo, setShowInfo] = useState(false)
-
-
-  // add array use map 
+  const [name, setName] = useState("");
+  const [age, setAge] = useState("");
+  const [address, setAddress] = useState("");
+  const [favoriteColor, setFavoriteColor] = useState("");
+  const [showInfo, setShowInfo] = useState(false);
+  const [idCards, setIdCards] = useState([]);
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -21,23 +17,34 @@ function IdCreator() {
     setAge(event.target.value);
   };
 
-  const handleAddress = (event) => {
+  const handleAddressChange = (event) => {
     setAddress(event.target.value);
   };
 
   const handleColorChange = (event) => {
     setFavoriteColor(event.target.value);
   };
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setShowInfo(true)
-  }
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const idCard = {
+      name: name,
+      age: age,
+      address: address,
+      favoriteColor: favoriteColor,
+    };
+    setIdCards([...idCards, idCard]);
+    setName("");
+    setAge("");
+    setAddress("");
+    setFavoriteColor("");
+    setShowInfo(true);
+  };
 
   return (
     <div>
-      <h1>Fill out this form to makea your id card</h1>
-      <form className='form' onSubmit={handleSubmit}>
+      <h1>Fill out this form to create your ID card</h1>
+      <form className="form" onSubmit={handleSubmit}>
         <label>
           Name:
           <input type="text" value={name} onChange={handleNameChange} />
@@ -50,12 +57,9 @@ function IdCreator() {
         <br />
         <label>
           Address:
-          <input
-            type="text"
-            value={Address}
-            onChange={handleAddress}
-          />
+          <input type="text" value={address} onChange={handleAddressChange} />
         </label>
+        <br />
         <label>
           Favorite Color:
           <input
@@ -64,17 +68,13 @@ function IdCreator() {
             onChange={handleColorChange}
           />
         </label>
-        <input type='submit' />
+        <br />
+        <input type="submit" value="Create ID Card" />
       </form>
 
-      {showInfo ?
-      <>
-      <About Me name={name} age={age} Address={Address} favoriteColor={favoriteColor} />
-      </>
-        :null}
-      </div>
-      );
-    }
-  
-    
+      {showInfo && <IdCardList idCards={idCards} />}
+    </div>
+  );
+}
+
 export default IdCreator;
