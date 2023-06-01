@@ -1,0 +1,56 @@
+.person{
+  background-color: pink;
+  border: 2px ;
+
+}
+*{
+  background-color: #c5d5cb;
+}
+/* Styling for the container holding the cards */
+.card-container  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling for individual cards */
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the card image */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the card title */
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styling for the card details */
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the additional information section */
+.card .additional-info {
+  font-size: 12px;
+  color: #888;
+}

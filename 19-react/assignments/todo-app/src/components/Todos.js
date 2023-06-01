@@ -3,24 +3,13 @@ import TodoForm from './TodoForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
 
-
-
-export default function Todos({todos,completeTodo, removeTodo, updateTodo}){
+export default function Todo({todos,completeTodo, removeTodo, updateTodo}){
   const [edit, setEdit] = useState({
     id: null,
     value: ''
   });
-  console.log(Todos)
+  console.log(Todo)
 
-  const completeTodo = id => {
-    let updatedTodos = todos.map(todo=> {
-      if(todo.id === id){
-        todo.isComplete = !todo.isComplete;
-      }
-      return todo;
-    })
-    setTodos(updatedTodos);
-  }
   const submitUpdate = newTodo => {
     updateTodo(edit.id, newTodo)
     setEdit({

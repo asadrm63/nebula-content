@@ -1,12 +1,16 @@
 import TodoList from './components/TodoList';
 import './App.css';
-// import TodoForm from './components/TodoForm';
+import {Routes,Route} from "react-router-dom"
+import Contact from './components/Contact';
 
 function App() {
   return (
     <div className="App">
-    <TodoList/>
-    {/* <TodoForm/> */}
+    {/* <TodoList/> */}
+    <Routes>
+    <Route path="/" element={<TodoList />} />
+    <Route path="contact" element={<Contact />} />
+    </Routes>
     </div>
   );
 }
