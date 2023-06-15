@@ -3,7 +3,7 @@ import React from 'react'
 const Search = (props) => {
   return (
     <div>
-      <input></input>
+      <input type="text" value={searchText} onChange={handleSearch} placeholder="Search memes" />
     </div>
   )
 }

@@ -5,9 +5,9 @@ const MemeCard = (props) => {
     console.log(props)
   return (
     <div className='memeCard'>
-        <h1>{props.name}</h1>
-        <img src={props.url} alt={props.name}/>
         {/* <Search/> */}
+        <h1>{props.meme.name}</h1>
+        <img src={props.meme.url} alt={props.meme.name}/>
     </div>
   )
 }
